@@ -349,7 +349,7 @@ def versioned_binaries(binary_name):
     tot_llvm_ver = 11
     try:
         response = request.urlopen(
-            'https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/CMakeLists.txt'
+            'https://raw.githubusercontent.com/kutemeikito/llvm-project/main/llvm/CMakeLists.txt'
         )
         to_parse = None
         data = response.readlines()
@@ -558,7 +558,7 @@ def fetch_llvm_binutils(root_folder, update, shallow, ref):
                 extra_args += ("--no-single-branch", )
         subprocess.run([
             "git", "clone", *extra_args,
-            "https://github.com/llvm/llvm-project",
+            "https://github.com/kutemeikito/llvm-project",
             p.as_posix()
         ],
                        check=True)
