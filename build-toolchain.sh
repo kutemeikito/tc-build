@@ -13,7 +13,7 @@ function msg() {
 # Build LLVM
 msg "Building LLVM..."
 ./build-llvm.py \
-	--clang-vendor "RastaMod" \
+	--clang-vendor "RastaMod69" \
 	--targets "ARM;AArch64;X86" \
 	"$repo_flag" \
 	--pgo \
